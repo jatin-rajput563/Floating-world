@@ -35,6 +35,7 @@ $('.slider').slick({
     autoplaySpeed: 1,
     speed: 10000,
     slidesToScroll: 4,
+    cssEase: 'linear',
 });
 $('.slider').slick({
     dots: true,
