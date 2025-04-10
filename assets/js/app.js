@@ -26,4 +26,45 @@ function toggleAccordion(index) {
         content.style.maxHeight = content.scrollHeight + 'px';
         icon.innerHTML = minusSVG;
     }
-}
+};
+
+$('.slider').slick({
+    infinite: true,
+    slidesToShow: 7,
+    autoplay: true,
+    autoplaySpeed: 1,
+    speed: 10000,
+    slidesToScroll: 4,
+});
+$('.slider').slick({
+    dots: true,
+    infinite: false,
+    speed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }
+    ]
+});
