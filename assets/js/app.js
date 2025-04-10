@@ -36,16 +36,9 @@ $('.slider').slick({
     speed: 10000,
     slidesToScroll: 4,
     cssEase: 'linear',
-});
-$('.slider').slick({
-    dots: true,
-    infinite: false,
-    speed: 2000,
-    slidesToShow: 4,
-    slidesToScroll: 4,
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 1100,
             settings: {
                 slidesToShow: 5,
                 slidesToScroll: 5,
@@ -54,17 +47,26 @@ $('.slider').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 920,
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 4,
+                infinite: true,
+                dots: true
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 685,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+            }
+        },
+        {
+            breakpoint: 510,
+            settings: {
+                slidesToShow: 1.8,
+                slidesToScroll: 1.8,
             }
         }
     ]
